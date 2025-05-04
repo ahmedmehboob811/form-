@@ -1,0 +1,261 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Registration Form - SMIT
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Roboto", sans-serif;
+    
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900 text-xl">
+  <header class="relative bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xl">
+   <div class="flex items-center justify-between py-6">
+    <div class="flex items-center space-x-4">
+        <img src="download.jpeg" alt="">
+        <!-- <img src="data:image/jpeg;base64,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" alt=""> -->
+        <!-- <img src="download (1).jpeg" alt="" height="80px" width="120px"> -->
+     <!-- <img alt="Saylani logo with green and blue text and icon" class="h-12 w-auto" height="50" src="https://storage.googleapis.com/a1aa/image/6ab0f1d7-e86c-4298-f628-1cac95d1f7ca.jpg" width="120"/> -->
+     <div class="hidden sm:flex space-x-3">
+      <a aria-label="Facebook" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#3b5998] text-white text-sm" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-tr from-[#feda75] via-[#fa7e1e] to-[#d62976] text-white text-sm" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="YouTube" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#ff0000] text-white text-sm" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="text-center flex-1">
+     <h1 class="text-xl font-extrabold leading-tight max-w-[400px] mx-auto">
+      Registration Form -
+      <span class="text-black">
+       SMIT
+      </span>
+     </h1>
+     <p class="text-xs text-gray-600 mt-1">
+      Services - Education - Registration
+     </p>
+    </div>
+    <div class="hidden sm:block">
+     <button class="flex items-center space-x-2 border border-[#0a4a8f] text-[#0a4a8f] text-xs font-semibold rounded-full px-3 py-1 hover:bg-[#0a4a8f] hover:text-white transition" type="button">
+      <i class="fas fa-user-circle">
+      </i>
+      <span>
+       Student portal
+      </span>
+     </button>
+    </div>
+   </div>
+   <div class="flex justify-center border-b border-gray-200">
+    <nav class="flex space-x-1 text-xs font-semibold text-gray-600">
+     <a class="border-b-2 border-[#6DA544] text-[#6DA544] px-4 py-2" href="#">
+      Registration
+     </a>
+     <a class="border-b-2 border-transparent hover:border-gray-300 px-4 py-2" href="#">
+      Download ID Card
+     </a>
+     <a class="border-b-2 border-transparent hover:border-gray-300 px-4 py-2" href="#">
+      Results
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16">
+   <form action="#" class="space-y-6" method="POST" novalidate="">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+     <div>
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="country">
+       Select country
+      </label>
+      <select aria-label="Select country" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="country" name="country">
+       <option disabled="" selected="">
+        Select country
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#6DA544] mb-1" for="city">
+       Select city
+      </label>
+      <select aria-label="Select city" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="city" name="city">
+       <option disabled="" selected="">
+        Select city
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="course">
+       Select course or event
+      </label>
+      <select aria-label="Select course or event" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="course" name="course">
+       <option disabled="" selected="">
+        Select course or event
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#6DA544] mb-1" for="computerProficiency">
+       Select your computer proficiency
+      </label>
+      <select aria-label="Select your computer proficiency" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="computerProficiency" name="computerProficiency">
+       <option disabled="" selected="">
+        Select your computer proficiency
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="fullName">
+       Full name
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="fullName" name="fullName" placeholder="Full name" type="text"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#6DA544] mb-1" for="fatherName">
+       Father name
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="fatherName" name="fatherName" placeholder="Father name" type="text"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="email">
+       Email
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="email" name="email" placeholder="Email" type="email"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#6DA544] mb-1" for="phone">
+       Phone
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="phone" name="phone" placeholder="Phone" type="tel"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="cnic">
+       CNIC
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="cnic" name="cnic" placeholder="CNIC" type="text"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#6DA544] mb-1" for="fatherCnic">
+       Father's CNIC (optional)
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="fatherCnic" name="fatherCnic" placeholder="Father's CNIC (optional)" type="text"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="dob">
+       Date of birth
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="dob" name="dob" placeholder="dd/mm/yyyy" type="date"/>
+     </div>
+     <div>
+      <label class="block text-[11px] font-semibold text-[#6DA544] mb-1" for="gender">
+       Select gender
+      </label>
+      <select aria-label="Select gender" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="gender" name="gender">
+       <option disabled="" selected="">
+        Select gender
+       </option>
+      </select>
+     </div>
+     <div class="md:col-span-2">
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="address">
+       Address
+      </label>
+      <input class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="address" name="address" placeholder="Address" type="text"/>
+     </div>
+     <div class="md:col-span-2">
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="lastQualification">
+       Last qualification
+      </label>
+      <select aria-label="Last qualification" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="lastQualification" name="lastQualification">
+       <option disabled="" selected="">
+        Last qualification
+       </option>
+      </select>
+     </div>
+     <div class="md:col-span-2">
+      <label class="block text-[11px] font-semibold text-[#0a4a8f] mb-1" for="laptop">
+       Do you have a Laptop?
+      </label>
+      <select aria-label="Do you have a Laptop?" class="w-full border border-[#6DA544] rounded px-3 py-2 text-xs placeholder:text-gray-400" id="laptop" name="laptop">
+       <option disabled="" selected="">
+        Do you have a Laptop?
+       </option>
+      </select>
+     </div>
+     <div class="md:col-span-2 flex items-start space-x-4">
+      <div class="w-[80px] h-[90px] border border-dashed border-gray-400 rounded text-center text-xs text-gray-600 flex flex-col justify-center cursor-pointer">
+       <span class="block font-semibold pt-2">
+        + Upload
+       </span>
+      </div>
+      <div class="text-[9px] text-gray-700 leading-tight max-w-[400px]">
+       <p>
+        With white or blue background
+       </p>
+       <p>
+        File size must be less than 1MB
+       </p>
+       <p>
+        File type: jpg, jpeg, png
+       </p>
+       <p>
+        Upload your recent passport size picture
+       </p>
+       <p>
+        Your Face should be clearly visible without any Glasses
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-200 pt-6 text-[10px] text-gray-700 max-w-4xl mx-auto space-y-1">
+     <p>
+      1. I hereby, solemnly declare that the data and facts mentioned herein
+          are true and correct to the best of my knowledge. Further, I will abide
+          by all the established and future regulations and policies of SWIT
+     </p>
+     <p>
+      2. I hereby accept the responsibilities of good conduct and guarantee
+          that I will not be involved in any other activity, political or ethical,
+          but learning during my stay in the program.
+     </p>
+     <p>
+      3. Defiance will render my admission canceled at any point in time.
+     </p>
+     <p>
+      4. Upon completion, of the course, I will complete the required project by SWIT.
+     </p>
+     <p>
+      5. It's mandatory for female students to wear abaya/hijab in the class
+     </p>
+    </div>
+    <div class="max-w-xs mx-auto mt-6">
+     <div class="flex items-center border border-gray-300 rounded px-3 py-2 space-x-3">
+      <input class="w-5 h-5 border border-gray-400 rounded" id="notRobot" name="notRobot" type="checkbox"/>
+      <label class="text-xs select-none" for="notRobot">
+       I'm not a robot
+      </label>
+      <img alt="reCAPTCHA logo with privacy and terms text" class="ml-auto h-10 w-auto" height="40" src="https://storage.googleapis.com/a1aa/image/19a0d789-b68b-4d49-cc84-b069193ec67e.jpg" width="70"/>
+     </div>
+    </div>
+    <div class="max-w-4xl mx-auto mt-6">
+     <button class="w-full bg-[#6DA544] hover:bg-[#5a8a35] text-white font-semibold text-xs py-3 rounded" type="submit">
+      SUBMIT
+     </button>
+    </div>
+   </form>
+  </main>
+ </body>
+</html>
